@@ -29,7 +29,7 @@ specified by the `id` in the url. Remember this will need to use a different fil
 1. Create a detail component that exports a load function
 1. In `film-detail.js` or `queen-detail.js`, use `fetch` to get the data, then call the load function with the data
 
-## Common Header
+## BONUS: Common Header
 
 Turn the header into a component. 
 
