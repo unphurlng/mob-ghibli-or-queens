@@ -35,5 +35,5 @@ Turn the header into a component.
 
 1. It doesn't need to take any data.
 1. Add a navigation link to "all films" or "all queens"
-1. Should still me tested using DDD process
+1. Should still be tested using DDD process
 1. Export a `loadHeader` function that is imported and called from both `index.js` and your `<item>-detail.js` main scripts
