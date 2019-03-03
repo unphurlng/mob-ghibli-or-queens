@@ -15,7 +15,7 @@ The main list of things page, `index.html`, should fetch and display a list of i
 
 1. Use DDD to design, then make into a tested template
 1. The template for each item should include a clickable lick (`<a>`) that naviages to the detail
-page with a query string `?id=<id of item?`.
+page with a query string `?id=<id of item>`.
 1. Create a list component that exports a load function
 1. In `index.js`, use `fetch` to get the data, then call the load function with the data
 
