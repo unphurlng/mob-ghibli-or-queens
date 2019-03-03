@@ -3,11 +3,11 @@
 Build a two-page app driven by data from an API. Choose either:
 
 1. [Ghibili Studio Films API](https://ghibliapi.herokuapp.com/)
-  1. List of films: https://ghibliapi.herokuapp.com/films
-  1. Film by ID: https://ghibliapi.herokuapp.com/films/<id>
+    1. List of films: https://ghibliapi.herokuapp.com/films
+    1. Film by ID: https://ghibliapi.herokuapp.com/films/<id>
 1. [Drag Race API](https://drag-race-api.readme.io/docs)
-  1. List of all queens: http://www.nokeynoshade.party/api/queens/all
-  1. List of Queen by ID: http://www.nokeynoshade.party/api/queens/<id>
+    1. List of all queens: http://www.nokeynoshade.party/api/queens/all
+    1. List of Queen by ID: http://www.nokeynoshade.party/api/queens/<id>
   
 ## Main List Page
 
