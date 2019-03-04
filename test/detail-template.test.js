@@ -10,7 +10,7 @@ const movie = {
 };
 
 function detailTemplate(movie) {
-    return `
+    const html = `
     <dl>
         <span>
             <dt>Title:</dt>            
@@ -30,6 +30,11 @@ function detailTemplate(movie) {
         </span>
     </dl>
     `;
+
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    const dom = template.content;
+    return dom;
 } 
 
 test('dynamically populate the DDs', assert => {
@@ -57,5 +62,5 @@ test('dynamically populate the DDs', assert => {
     //act
     const result = detailTemplate(movie);
     //assert
-    assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 });
