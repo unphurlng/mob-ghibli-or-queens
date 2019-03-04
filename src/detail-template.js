@@ -7,7 +7,7 @@ export default function detailTemplate(movie) {
         </span>
         <span>
             <dt>Year Released</dt>
-            <dd>${movie.year}</dd>
+            <dd>${movie.release_date}</dd>
         </span>
         <span>
             <dt>Description</dt>

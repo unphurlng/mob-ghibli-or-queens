@@ -1,4 +1,4 @@
-import movieListTemplate from '../src/movie-list-template.js';
+import { movieListTemplate } from '../src/movie-list-template.js';
 const test = QUnit.test;
 
 QUnit.module('MOVIE LIST TEST');
