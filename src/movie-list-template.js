@@ -1,5 +1,5 @@
 export default function movieListTemplate(movieList) {
-    const html = ` 
+    const html = /*html*/` 
         <li>
             <a href="${movieList.url}">${movieList.title} (${movieList.year})</a>
         </li>

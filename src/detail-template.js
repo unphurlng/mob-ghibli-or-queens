@@ -1,5 +1,5 @@
 export default function detailTemplate(movie) {
-    const html = `
+    const html = /*html*/`
     <dl>
         <span>
             <dt>Title:</dt>            

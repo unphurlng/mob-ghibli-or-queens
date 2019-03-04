@@ -1,3 +1,21 @@
+header{
+    display: flex;
+    flex-flow: row-reverse;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+
+header, h1{
+    flex-grow: 1;
+    align-self: center;
+    flex-basis: 80%;
+
+}
+a {
+    align-self: flex-start;
+}
+
 dl {
     display: flex;
     flex-direction: column;
