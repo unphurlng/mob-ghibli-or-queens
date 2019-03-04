@@ -1,0 +1,16 @@
+dl {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+}
+
+dt {
+    flex-basis: 30%;
+}
+
+dd {
+}
