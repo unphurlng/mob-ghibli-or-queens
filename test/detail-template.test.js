@@ -2,56 +2,35 @@ const test = QUnit.test;
 
 QUnit.module('TEMPLATE TEST');
 
-const movie = `
-<dl>
-    <span>
-        <dt>Title:</dt>            
-        <dd>Castle In The Sky</dd>
-    </span>
+const movie = {
+    title: 'Castle In The Sky',
+    year: 1986,
+    description: 'hi',
+    director: 'bye'
+};
 
-    <span>
-        <dt>Year Released</dt>
-        <dd>1986</dd>
-    </span>
-
-    <span>
-        <dt>Description</dt>
-        <dd>1986</dd>
-    </span>
-
-    <span>
-        <dt>Director</dt>
-        <dd>1986</dd>
-    </span>
-</dl>
-`;
-
-function detailTemplate() {
+function detailTemplate(movie) {
     return `
     <dl>
         <span>
             <dt>Title:</dt>            
-            <dd>Castle In The Sky</dd>
+            <dd>${movie.title}</dd>
         </span>
-
         <span>
             <dt>Year Released</dt>
-            <dd>1986</dd>
+            <dd>${movie.year}</dd>
         </span>
-
         <span>
             <dt>Description</dt>
-            <dd>1986</dd>
+            <dd>${movie.description}</dd>
         </span>
-
         <span>
             <dt>Director</dt>
-            <dd>1986</dd>
+            <dd>${movie.director}</dd>
         </span>
     </dl>
     `;
-}
-
+} 
 
 test('dynamically populate the DDs', assert => {
     //arrange
@@ -61,25 +40,22 @@ test('dynamically populate the DDs', assert => {
             <dt>Title:</dt>            
             <dd>Castle In The Sky</dd>
         </span>
-
         <span>
             <dt>Year Released</dt>
             <dd>1986</dd>
         </span>
-
         <span>
             <dt>Description</dt>
-            <dd>1986</dd>
+            <dd>hi</dd>
         </span>
-
         <span>
             <dt>Director</dt>
-            <dd>1986</dd>
+            <dd>bye</dd>
         </span>
     </dl>
     `;
     //act
-    const result = detailTemplate();
+    const result = detailTemplate(movie);
     //assert
     assert.equal(result, expected);
 });
