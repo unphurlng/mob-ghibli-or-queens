@@ -6,7 +6,7 @@ QUnit.module('MOVIE LIST TEST');
 const movieList = {
     url: 'google.com',
     title: 'Castle In The Sky',
-    year: 1986
+    release_date: 1986
 };
 
 test('dynamically generated movie list', assert => {

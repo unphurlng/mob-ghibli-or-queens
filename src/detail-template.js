@@ -1,4 +1,4 @@
-export default function detailTemplate(movie) {
+export function detailTemplate(movie) {
     const html = /*html*/`
     <dl>
         <span>
@@ -25,3 +25,11 @@ export default function detailTemplate(movie) {
     const dom = template.content;
     return dom;
 } 
+
+const detailContainer = document.getElementById('detail-container');
+
+export default function loadMovieDetail(movie) {
+    console.log(movie);
+    const dom = detailTemplate(movie);
+    detailContainer.appendChild(dom);
+}

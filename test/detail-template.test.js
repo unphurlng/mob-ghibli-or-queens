@@ -1,11 +1,11 @@
-import detailTemplate from '../src/detail-template.js';
+import { detailTemplate } from '../src/detail-template.js';
 const test = QUnit.test;
 
 QUnit.module('TEMPLATE TEST');
 
 const movie = {
     title: 'Castle In The Sky',
-    year: 1986,
+    release_date: 1986,
     description: 'hi',
     director: 'bye'
 };

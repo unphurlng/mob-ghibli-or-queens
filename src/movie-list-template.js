@@ -1,7 +1,7 @@
 export function movieListTemplate(movieList) {
     const html = /*html*/` 
         <li>
-            <a href="${movieList.url}">${movieList.title} (${movieList.release_date})</a>
+            <a href= "../details.html?id=${movieList.id}">${movieList.title} (${movieList.release_date})</a>
         </li>
     `;
     const template = document.createElement('template');
